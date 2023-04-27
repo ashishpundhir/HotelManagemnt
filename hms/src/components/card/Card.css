@@ -1,0 +1,83 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.timestamp {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.room-type {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.room-number {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.update-button,
+.delete-button {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background-color: #005fa3;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  
+  .time {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
